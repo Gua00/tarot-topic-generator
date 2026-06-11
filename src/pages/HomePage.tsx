@@ -116,7 +116,7 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
         </h1>
         <p className="text-sm text-[var(--text-muted)]">
           输入关键词，选择情绪能量，获取大众占卜灵感
-          <span className="block text-xs mt-0.5">实时搜罗B站热门话题 + 内置精选话题库</span>
+          <span className="block text-xs mt-0.5">📡 优先B站实时抓取 → 链接天然精确匹配</span>
         </p>
       </div>
 
