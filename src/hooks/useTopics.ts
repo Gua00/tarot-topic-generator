@@ -145,12 +145,9 @@ export function useTopics(keyword: string, colorTag: Exclude<ColorTag, '中性'>
     const shuffledG2 = shuffleArray(G2);
     const shuffledG3 = shuffleArray(G3);
 
-    result.push(...shuffledG1.slice(0, 3));
-    const remainingG1 = shuffledG1.slice(3);
-    result.push(...remainingG1, ...shuffledG2);
-    result.push(...shuffledG3);
+    result.push(...shuffledG1, ...shuffledG2, ...shuffledG3);
 
-    return result.slice(0, 10);
+    return result; // 展示全部匹配结果
   }, [keyword, colorTag]);
 
   const sortedResults = useMemo(() => {

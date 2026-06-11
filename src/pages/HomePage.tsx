@@ -78,11 +78,11 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
     const sg3 = sortBiliFirst(G3);
 
     const assembled: Topic[] = [];
-    assembled.push(...sg1.slice(0, 3));          // 前3条精准
-    assembled.push(...sg1.slice(3), ...sg2);     // 中间同色系
-    assembled.push(...sg3);                       // 最后中性补齐
+    assembled.push(...sg1);           // 精准颜色匹配排最前
+    assembled.push(...sg2);           // 邻近色其次
+    assembled.push(...sg3);           // 中性最后
 
-    return assembled.slice(0, 10);
+    return assembled;                 // 展示全部匹配结果
   }, [biliTopics, localResults, currentColor]);
 
   const displayResults = useMemo(() => {
@@ -125,7 +125,6 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
           <div className="flex items-center justify-between">
             <p className="text-sm text-[var(--text-secondary)]">
               共找到 <span className="text-[var(--accent)] font-medium">{totalCount}</span> 个匹配话题
-              {totalCount > 10 && <span className="text-[var(--text-muted)]">（展示10个）</span>}
               {biliLoading && (
                 <span className="text-xs text-[var(--text-muted)] ml-2 animate-pulse">
                   📡 实时搜集中…
