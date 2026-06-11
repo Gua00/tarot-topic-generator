@@ -62,10 +62,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    // 调用B站搜索API
+    // 调用B站搜索API — 有UP主时加入UP主名提升精准度
+    const searchQuery = upFilter
+      ? `${upFilter} ${keyword} 塔罗占卜`
+      : `${keyword} 塔罗占卜`;
     const searchUrl = new URL('https://api.bilibili.com/x/web-interface/search/type');
     searchUrl.searchParams.set('search_type', 'video');
-    searchUrl.searchParams.set('keyword', `${keyword} 塔罗占卜`);
+    searchUrl.searchParams.set('keyword', searchQuery);
     searchUrl.searchParams.set('page', String(page));
     searchUrl.searchParams.set('page_size', '50');
     searchUrl.searchParams.set('order', 'click');

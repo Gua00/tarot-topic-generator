@@ -36,17 +36,20 @@ function dedupeByTitle(topics: Topic[]): Topic[] {
 export default function HomePage({ currentColor, onColorChange }: HomePageProps) {
   const [keyword, setKeyword] = useState('');
   const [searchKeyword, setSearchKeyword] = useState('');
+  const [upFilter, setUpFilter] = useState('');
+  const [activeUpFilter, setActiveUpFilter] = useState('');
   const [sortByHeat, setSortByHeat] = useState(false);
 
   // 本地库匹配
-  const { results: localResults } = useTopics(searchKeyword, currentColor);
+  const { results: localResults } = useTopics(searchKeyword, currentColor, activeUpFilter);
   // B站实时搜索
-  const { biliTopics, biliLoading } = useBiliSearch(searchKeyword);
+  const { biliTopics, biliLoading } = useBiliSearch(searchKeyword, activeUpFilter);
   const { isFavorite, toggleFavorite } = useFavorites();
 
   const handleGenerate = useCallback(() => {
     setSearchKeyword(keyword);
-  }, [keyword]);
+    setActiveUpFilter(upFilter);
+  }, [keyword, upFilter]);
 
   // 合并 B站 + 本地库，按颜色优先级分组
   const mergedResults = useMemo(() => {
@@ -115,6 +118,8 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
       <SearchInput
         keyword={keyword}
         onKeywordChange={setKeyword}
+        upFilter={upFilter}
+        onUpFilterChange={setUpFilter}
         onGenerate={handleGenerate}
       />
 

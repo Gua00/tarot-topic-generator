@@ -98,19 +98,23 @@ function matchKeyword(topic: Topic, rawKeyword: string): boolean {
   });
 }
 
-export function useTopics(keyword: string, colorTag: Exclude<ColorTag, '中性'>) {
+export function useTopics(keyword: string, colorTag: Exclude<ColorTag, '中性'>, upFilter: string = '') {
   const [sortByHeat, setSortByHeat] = useState(false);
 
   const matchResults = useMemo(() => {
     const allTopics = getAllTopics();
     const kw = keyword.trim().toLowerCase();
 
-    // Step 1: Filter by keyword (smart matching)
+    // Step 1: Filter by keyword (smart matching) + UP主
     let filtered: Topic[];
-    if (!kw) {
+    if (!kw && !upFilter) {
       filtered = allTopics;
     } else {
-      filtered = allTopics.filter((t) => matchKeyword(t, kw));
+      filtered = allTopics.filter((t) => {
+        const kwMatch = !kw || matchKeyword(t, kw);
+        const upMatch = !upFilter || t.upMaster === upFilter;
+        return kwMatch && upMatch;
+      });
     }
 
     // Step 2: Group by color match priority

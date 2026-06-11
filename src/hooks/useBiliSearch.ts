@@ -11,7 +11,7 @@ interface BiliSearchResult {
 const BILI_CACHE = new Map<string, { data: BiliSearchResult; ts: number }>();
 const BILI_CACHE_TTL = 30 * 60 * 1000; // 本地缓存 30 分钟
 
-export function useBiliSearch(keyword: string) {
+export function useBiliSearch(keyword: string, upFilter: string) {
   const [results, setResults] = useState<Topic[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -20,14 +20,20 @@ export function useBiliSearch(keyword: string) {
 
   useEffect(() => {
     const kw = keyword.trim();
-    if (!kw) {
+    const up = upFilter.trim();
+
+    // 如果有关键词或UP主，就搜索
+    if (!kw && !up) {
       setResults([]);
       setLoading(false);
       return;
     }
 
+    // 如果没有关键词但有UP主，用"塔罗占卜"作为默认搜索词
+    const searchKw = kw || '塔罗占卜';
+
     // 检查本地缓存
-    const cacheKey = `bili_${kw}`;
+    const cacheKey = `bili_${searchKw}_${up}`;
     const cached = BILI_CACHE.get(cacheKey);
     if (cached && Date.now() - cached.ts < BILI_CACHE_TTL) {
       setResults(cached.data.topics);
@@ -36,7 +42,6 @@ export function useBiliSearch(keyword: string) {
       return;
     }
 
-    // 取消上一次请求
     if (abortRef.current) abortRef.current.abort();
     const controller = new AbortController();
     abortRef.current = controller;
@@ -44,7 +49,13 @@ export function useBiliSearch(keyword: string) {
     setLoading(true);
     setError(null);
 
-    fetch(`/api/search?keyword=${encodeURIComponent(kw)}&page=1`, {
+    const params = new URLSearchParams({
+      keyword: searchKw,
+      page: '1',
+    });
+    if (up) params.set('up', up);
+
+    fetch(`/api/search?${params.toString()}`, {
       signal: controller.signal,
     })
       .then((res) => res.json())
@@ -53,7 +64,6 @@ export function useBiliSearch(keyword: string) {
         setResults(data.topics || []);
         setFromCache(data.cached);
         setLoading(false);
-        // 存入本地缓存
         BILI_CACHE.set(cacheKey, { data, ts: Date.now() });
       })
       .catch((err) => {
@@ -64,7 +74,7 @@ export function useBiliSearch(keyword: string) {
       });
 
     return () => controller.abort();
-  }, [keyword]);
+  }, [keyword, upFilter]);
 
   return { biliTopics: results, biliLoading: loading, biliError: error, fromCache };
 }
