@@ -7,7 +7,6 @@ interface TopicCardListProps {
   onToggleFavorite: (topic: Topic) => void;
   showDelete?: boolean;
   onDelete?: (id: string) => void;
-  resolvedUrls?: Map<string, string>;
 }
 
 export default function TopicCardList({
@@ -16,7 +15,6 @@ export default function TopicCardList({
   onToggleFavorite,
   showDelete,
   onDelete,
-  resolvedUrls,
 }: TopicCardListProps) {
   if (topics.length === 0) {
     return (
@@ -38,7 +36,6 @@ export default function TopicCardList({
           onToggleFavorite={onToggleFavorite}
           showDelete={showDelete}
           onDelete={onDelete}
-          resolvedUrl={resolvedUrls?.get(topic.id)}
         />
       ))}
     </div>

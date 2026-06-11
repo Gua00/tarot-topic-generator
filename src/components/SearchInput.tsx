@@ -1,22 +1,14 @@
 import { Search } from 'lucide-react';
-import { CATEGORIES, UP_MASTERS } from '../types';
+import { CATEGORIES } from '../types';
 import type { Category } from '../types';
 
 interface SearchInputProps {
   keyword: string;
   onKeywordChange: (kw: string) => void;
-  upFilter: string;
-  onUpFilterChange: (up: string) => void;
   onGenerate: () => void;
 }
 
-export default function SearchInput({
-  keyword,
-  onKeywordChange,
-  upFilter,
-  onUpFilterChange,
-  onGenerate,
-}: SearchInputProps) {
+export default function SearchInput({ keyword, onKeywordChange, onGenerate }: SearchInputProps) {
   return (
     <div className="space-y-3">
       {/* Input row */}
@@ -43,21 +35,6 @@ export default function SearchInput({
           <Search size={16} />
           <span className="hidden sm:inline">生成话题</span>
         </button>
-      </div>
-
-      {/* UP主选择器 */}
-      <div className="flex items-center gap-2">
-        <span className="text-xs text-[var(--text-muted)] whitespace-nowrap">UP主：</span>
-        <select
-          value={upFilter}
-          onChange={(e) => onUpFilterChange(e.target.value)}
-          className="flex-1 px-3 py-1.5 rounded-lg bg-[var(--card-bg)] border border-[var(--border-base)] text-[var(--text-secondary)] text-xs focus:outline-none focus:border-[var(--accent)] transition-all"
-        >
-          <option value="">全部UP主</option>
-          {UP_MASTERS.map((up) => (
-            <option key={up} value={up}>{up}</option>
-          ))}
-        </select>
       </div>
 
       {/* Quick tags */}
