@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import FavoritesPage from './pages/FavoritesPage';
 import ManagePage from './pages/ManagePage';
 import { useTheme } from './hooks/useTheme';
+import { APP_VERSION } from './version';
 import type { ColorTag } from './types';
 
 interface ThemeContextType {
@@ -34,8 +35,9 @@ function AppContent() {
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/manage" element={<ManagePage />} />
       </Routes>
-      <footer className="text-center py-6 text-xs text-[var(--text-muted)]">
-        🔮 塔罗话题生成器 V3.2 · 灵感来自B站塔罗社区
+      <footer className="text-center py-4 text-xs text-[var(--text-muted)] space-y-1">
+        <p>🔮 塔罗话题生成器 {APP_VERSION} · 灵感来自B站塔罗社区</p>
+        <p className="opacity-50">全量B站实时数据 · 链接精确直达原视频</p>
       </footer>
     </div>
   );
