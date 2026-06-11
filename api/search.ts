@@ -100,8 +100,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const rawTitle = v.title || '';
         const cleaned = cleanTitle(rawTitle);
         const upMaster = v.author || '';
+        // bvid 是精确的视频ID；极少数旧视频可能没有bvid，用aid兜底
+        const videoId = v.bvid || (v.aid ? `av${v.aid}` : null);
+        if (!videoId) return null;
         return {
-          id: 'b_' + v.bvid,
+          id: 'b_' + videoId,
           title: cleaned,
           category: '通用' as const,
           colorTag: classifyEmotion(cleaned),
@@ -111,6 +114,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           source: 'bilibili' as const,
         };
       })
+      .filter(Boolean)
       .filter((t: any) => t.title.length >= 4)
       .filter((t: any) => {
         // 如果指定了UP主，只保留匹配的

@@ -16,14 +16,9 @@ function formatHotness(n: number): string {
 }
 
 function getBiliLink(topic: Topic): string {
-  // B站实时数据 → 直接跳转视频
-  if (topic.id.startsWith('b_')) {
-    const bvid = topic.id.replace('b_', '');
-    return `https://www.bilibili.com/video/${bvid}`;
-  }
-  // 本地话题 → B站搜索
-  const query = encodeURIComponent(`${topic.title} ${topic.upMaster}`);
-  return `https://search.bilibili.com/all?keyword=${query}`;
+  const rawId = topic.id.replace('b_', '');
+  // BV号 → /video/BVxxx，AV号 → /video/av123
+  return `https://www.bilibili.com/video/${rawId}`;
 }
 
 export default function TopicCard({
@@ -64,16 +59,18 @@ export default function TopicCard({
 
         {/* Actions */}
         <div className="flex flex-col items-center gap-2">
-          {/* B站链接 */}
-          <a
-            href={getBiliLink(topic)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-1.5 rounded-full transition-all duration-200 hover:bg-[var(--accent-light)] text-[var(--text-muted)] hover:text-[var(--accent)]"
-            title={isBili ? '在B站打开原视频' : '在B站搜索相关视频'}
-          >
-            <ExternalLink size={16} />
-          </a>
+          {/* B站链接 — 仅B站实时数据有精确视频链接 */}
+          {isBili && (
+            <a
+              href={getBiliLink(topic)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-full transition-all duration-200 hover:bg-[var(--accent-light)] text-[var(--text-muted)] hover:text-[var(--accent)]"
+              title="在B站打开原视频"
+            >
+              <ExternalLink size={16} />
+            </a>
+          )}
           <button
             onClick={() => onToggleFavorite(topic)}
             className="p-1.5 rounded-full transition-all duration-200 hover:bg-[var(--accent-light)]"
