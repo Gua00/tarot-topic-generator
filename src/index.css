@@ -1,0 +1,193 @@
+@import 'tailwindcss';
+
+/* ===== 羊皮纸基底 — 永远不变的复古氛围 ===== */
+:root {
+  --parchment: #f5f0eb;
+  --parchment-dark: #e8ddd0;
+  --parchment-light: #faf7f2;
+  --card-bg: #faf7f2;
+  --text-primary: #4a3728;
+  --text-secondary: #8d6e63;
+  --text-muted: #b0a090;
+  --border-base: #d4c5b9;
+  --border-light: #e5dbcf;
+  --shadow-card: 0 2px 12px rgba(74, 55, 40, 0.08);
+  --shadow-hover: 0 4px 20px rgba(74, 55, 40, 0.15);
+  --radius-card: 16px;
+  --radius-btn: 12px;
+
+  font-family: 'Georgia', 'Noto Serif SC', 'Source Han Serif SC', serif;
+  color: var(--text-primary);
+  background: var(--parchment);
+}
+
+body {
+  margin: 0;
+  background: var(--parchment);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(139, 119, 90, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(139, 119, 90, 0.04) 0%, transparent 50%);
+  min-height: 100vh;
+}
+
+/* ===== 10色主题点缀 — 通过 data-theme 切换 ===== */
+[data-theme='白色'] {
+  --accent: #b8a99a;
+  --accent-light: rgba(184, 169, 154, 0.12);
+  --accent-border: rgba(184, 169, 154, 0.4);
+  --accent-glow: 0 0 12px rgba(184, 169, 154, 0.25);
+  --accent-hover: #a89888;
+}
+[data-theme='橙色'] {
+  --accent: #d4946a;
+  --accent-light: rgba(212, 148, 106, 0.12);
+  --accent-border: rgba(212, 148, 106, 0.4);
+  --accent-glow: 0 0 12px rgba(212, 148, 106, 0.25);
+  --accent-hover: #c0805a;
+}
+[data-theme='黑色'] {
+  --accent: #5d4e37;
+  --accent-light: rgba(93, 78, 55, 0.12);
+  --accent-border: rgba(93, 78, 55, 0.4);
+  --accent-glow: 0 0 12px rgba(93, 78, 55, 0.2);
+  --accent-hover: #4a3e2c;
+}
+[data-theme='粉色'] {
+  --accent: #c4877b;
+  --accent-light: rgba(196, 135, 123, 0.12);
+  --accent-border: rgba(196, 135, 123, 0.4);
+  --accent-glow: 0 0 12px rgba(196, 135, 123, 0.25);
+  --accent-hover: #b07065;
+}
+[data-theme='蓝色'] {
+  --accent: #6d8a9e;
+  --accent-light: rgba(109, 138, 158, 0.12);
+  --accent-border: rgba(109, 138, 158, 0.4);
+  --accent-glow: 0 0 12px rgba(109, 138, 158, 0.25);
+  --accent-hover: #5d7a8e;
+}
+[data-theme='紫色'] {
+  --accent: #8b6b9e;
+  --accent-light: rgba(139, 107, 158, 0.12);
+  --accent-border: rgba(139, 107, 158, 0.4);
+  --accent-glow: 0 0 12px rgba(139, 107, 158, 0.25);
+  --accent-hover: #7a5a8e;
+}
+[data-theme='绿色'] {
+  --accent: #7a9a7a;
+  --accent-light: rgba(122, 154, 122, 0.12);
+  --accent-border: rgba(122, 154, 122, 0.4);
+  --accent-glow: 0 0 12px rgba(122, 154, 122, 0.25);
+  --accent-hover: #6a8a6a;
+}
+[data-theme='黄色'] {
+  --accent: #c4a44a;
+  --accent-light: rgba(196, 164, 74, 0.12);
+  --accent-border: rgba(196, 164, 74, 0.4);
+  --accent-glow: 0 0 12px rgba(196, 164, 74, 0.25);
+  --accent-hover: #b0943a;
+}
+[data-theme='青色'] {
+  --accent: #6b9e9e;
+  --accent-light: rgba(107, 158, 158, 0.12);
+  --accent-border: rgba(107, 158, 158, 0.4);
+  --accent-glow: 0 0 12px rgba(107, 158, 158, 0.25);
+  --accent-hover: #5b8e8e;
+}
+[data-theme='红色'] {
+  --accent: #a0524a;
+  --accent-light: rgba(160, 82, 74, 0.12);
+  --accent-border: rgba(160, 82, 74, 0.4);
+  --accent-glow: 0 0 12px rgba(160, 82, 74, 0.25);
+  --accent-hover: #90423a;
+}
+
+/* Default: purple */
+:root {
+  --accent: #8b6b9e;
+  --accent-light: rgba(139, 107, 158, 0.12);
+  --accent-border: rgba(139, 107, 158, 0.4);
+  --accent-glow: 0 0 12px rgba(139, 107, 158, 0.25);
+  --accent-hover: #7a5a8e;
+}
+
+/* ===== 工具类 ===== */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.bg-parchment { background: var(--parchment); }
+.bg-card { background: var(--card-bg); }
+.border-base { border-color: var(--border-base); }
+
+/* Card glow on hover */
+.card-glow {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card-glow:hover {
+  box-shadow: var(--shadow-hover), var(--accent-glow);
+  border-color: var(--accent-border);
+}
+
+/* Button base */
+.btn-accent {
+  background: var(--accent);
+  color: #faf7f2;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.btn-accent:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+.btn-accent:active {
+  transform: translateY(0);
+}
+
+/* Color dot */
+.color-dot {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--border-base);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.color-dot:hover {
+  transform: scale(1.15);
+  border-color: var(--accent);
+}
+.color-dot.selected {
+  border-color: var(--accent);
+  border-width: 3px;
+  box-shadow: var(--accent-glow);
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+}
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-primary);
+  color: var(--parchment-light);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 50;
+}
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--parchment-dark); }
+::-webkit-scrollbar-thumb { background: var(--border-base); border-radius: 3px; }

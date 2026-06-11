@@ -1,0 +1,2056 @@
+{
+  "version": "1.0",
+  "updated": "2026-06-11",
+  "topics": [
+    {
+      "id": "t001",
+      "title": "他今天会联系我吗？",
+      "category": "爱情",
+      "colorTag": "白色",
+      "hotness": 52842,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t002",
+      "title": "TA对我有感觉吗？",
+      "category": "爱情",
+      "colorTag": "白色",
+      "hotness": 25697,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t003",
+      "title": "他还想和我继续吗？",
+      "category": "爱情",
+      "colorTag": "白色",
+      "hotness": 47008,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t004",
+      "title": "这次面试能通过吗？",
+      "category": "事业",
+      "colorTag": "白色",
+      "hotness": 38417,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t005",
+      "title": "我的选择是对的吗？",
+      "category": "通用",
+      "colorTag": "白色",
+      "hotness": 37525,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t006",
+      "title": "明天会有好运吗？",
+      "category": "运势预测",
+      "colorTag": "白色",
+      "hotness": 39115,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t007",
+      "title": "这件事能成吗？",
+      "category": "通用",
+      "colorTag": "白色",
+      "hotness": 32300,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t008",
+      "title": "该主动还是等待？",
+      "category": "爱情",
+      "colorTag": "白色",
+      "hotness": 51055,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t009",
+      "title": "他说的是真心话吗？",
+      "category": "爱情",
+      "colorTag": "白色",
+      "hotness": 22113,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t010",
+      "title": "我该接受这个offer吗？",
+      "category": "事业",
+      "colorTag": "白色",
+      "hotness": 18479,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t011",
+      "title": "这次出行顺利吗？",
+      "category": "通用",
+      "colorTag": "白色",
+      "hotness": 66691,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t012",
+      "title": "今天适合做决定吗？",
+      "category": "运势预测",
+      "colorTag": "白色",
+      "hotness": 3935,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t013",
+      "title": "还会再见到他吗？",
+      "category": "复合/前任",
+      "colorTag": "白色",
+      "hotness": 4932,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t014",
+      "title": "这份工作适合我吗？",
+      "category": "事业",
+      "colorTag": "白色",
+      "hotness": 39362,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t015",
+      "title": "TA在想我吗？",
+      "category": "爱情",
+      "colorTag": "白色",
+      "hotness": 61421,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t016",
+      "title": "我的直觉准吗？",
+      "category": "通用",
+      "colorTag": "白色",
+      "hotness": 79034,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t017",
+      "title": "他会来赴约吗？",
+      "category": "爱情",
+      "colorTag": "白色",
+      "hotness": 61896,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t018",
+      "title": "现在该换工作吗？",
+      "category": "事业",
+      "colorTag": "白色",
+      "hotness": 76408,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t019",
+      "title": "如何提升个人魅力？",
+      "category": "爱情",
+      "colorTag": "橙色",
+      "hotness": 40666,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t020",
+      "title": "下半年有什么好消息？",
+      "category": "运势预测",
+      "colorTag": "橙色",
+      "hotness": 72733,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t021",
+      "title": "如何吸引正缘？",
+      "category": "爱情",
+      "colorTag": "橙色",
+      "hotness": 75595,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t022",
+      "title": "财运提升的契机在哪里？",
+      "category": "财运",
+      "colorTag": "橙色",
+      "hotness": 17012,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t023",
+      "title": "如何成为更好的自己？",
+      "category": "通用",
+      "colorTag": "橙色",
+      "hotness": 56082,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t024",
+      "title": "新机会什么时候出现？",
+      "category": "事业",
+      "colorTag": "橙色",
+      "hotness": 68347,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t025",
+      "title": "如何快速走出低谷？",
+      "category": "通用",
+      "colorTag": "橙色",
+      "hotness": 73043,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t026",
+      "title": "主动出击还是等待时机？",
+      "category": "事业",
+      "colorTag": "橙色",
+      "hotness": 65383,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t027",
+      "title": "最近有什么惊喜在等我？",
+      "category": "运势预测",
+      "colorTag": "橙色",
+      "hotness": 23050,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t028",
+      "title": "如何让生活充满能量？",
+      "category": "通用",
+      "colorTag": "橙色",
+      "hotness": 25360,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t029",
+      "title": "值得期待的转机是什么？",
+      "category": "通用",
+      "colorTag": "橙色",
+      "hotness": 46525,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t030",
+      "title": "如何打开社交圈？",
+      "category": "人际关系",
+      "colorTag": "橙色",
+      "hotness": 76851,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t031",
+      "title": "贵人运如何？",
+      "category": "事业",
+      "colorTag": "橙色",
+      "hotness": 47046,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t032",
+      "title": "行动方向在哪里？",
+      "category": "通用",
+      "colorTag": "橙色",
+      "hotness": 16667,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t033",
+      "title": "如何提升自信？",
+      "category": "通用",
+      "colorTag": "橙色",
+      "hotness": 84370,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t034",
+      "title": "这一年最大的收获会是什么？",
+      "category": "运势预测",
+      "colorTag": "橙色",
+      "hotness": 35124,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t035",
+      "title": "如何抓住眼前的机遇？",
+      "category": "事业",
+      "colorTag": "橙色",
+      "hotness": 12516,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t036",
+      "title": "积极改变的最好时机是？",
+      "category": "通用",
+      "colorTag": "橙色",
+      "hotness": 12762,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t037",
+      "title": "这段关系里隐藏的危机是什么？",
+      "category": "爱情",
+      "colorTag": "黑色",
+      "hotness": 27165,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t038",
+      "title": "他对我隐瞒了什么？",
+      "category": "爱情",
+      "colorTag": "黑色",
+      "hotness": 24024,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t039",
+      "title": "我的感情为什么总是重蹈覆辙？",
+      "category": "爱情",
+      "colorTag": "黑色",
+      "hotness": 83238,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t040",
+      "title": "最需要放下的执念是什么？",
+      "category": "通用",
+      "colorTag": "黑色",
+      "hotness": 28720,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t041",
+      "title": "这段感情是不是没有结果？",
+      "category": "爱情",
+      "colorTag": "黑色",
+      "hotness": 18065,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t042",
+      "title": "阻碍我前进的黑暗面是什么？",
+      "category": "通用",
+      "colorTag": "黑色",
+      "hotness": 30540,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t043",
+      "title": "为什么总是吸引错的人？",
+      "category": "爱情",
+      "colorTag": "黑色",
+      "hotness": 14817,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t044",
+      "title": "该彻底结束了吗？",
+      "category": "复合/前任",
+      "colorTag": "黑色",
+      "hotness": 68243,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t045",
+      "title": "关系中的权力博弈是什么？",
+      "category": "人际关系",
+      "colorTag": "黑色",
+      "hotness": 10746,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t046",
+      "title": "我最大的恐惧是什么？",
+      "category": "通用",
+      "colorTag": "黑色",
+      "hotness": 10408,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t047",
+      "title": "这段沉默意味着什么？",
+      "category": "人际关系",
+      "colorTag": "黑色",
+      "hotness": 12713,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t048",
+      "title": "谁在背后对我不利？",
+      "category": "人际关系",
+      "colorTag": "黑色",
+      "hotness": 50116,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t049",
+      "title": "我必须面对但一直逃避的是什么？",
+      "category": "通用",
+      "colorTag": "黑色",
+      "hotness": 19776,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t050",
+      "title": "过去的创伤如何影响现在？",
+      "category": "通用",
+      "colorTag": "黑色",
+      "hotness": 76604,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t051",
+      "title": "这件事最坏的结果是什么？",
+      "category": "通用",
+      "colorTag": "黑色",
+      "hotness": 23968,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t052",
+      "title": "他为什么会离开？",
+      "category": "复合/前任",
+      "colorTag": "黑色",
+      "hotness": 74835,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t053",
+      "title": "关系中的信任危机有多大？",
+      "category": "爱情",
+      "colorTag": "黑色",
+      "hotness": 4281,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t054",
+      "title": "什么是我不愿承认的真相？",
+      "category": "通用",
+      "colorTag": "黑色",
+      "hotness": 58261,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t055",
+      "title": "他心里到底是怎么想我的？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 43773,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t056",
+      "title": "我们之间会有进一步发展吗？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 79955,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t057",
+      "title": "这段暗恋有结果吗？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 54954,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t058",
+      "title": "他是不是也在偷偷关注我？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 61044,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t059",
+      "title": "我们的缘分深不深？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 69352,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t060",
+      "title": "未来的另一半会是什么样的人？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 14478,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t061",
+      "title": "这次心动该不该认真？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 27326,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t062",
+      "title": "关系升温的关键是什么？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 76591,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t063",
+      "title": "恋爱中需要注意什么？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 69654,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t064",
+      "title": "他喜欢我什么？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 76707,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t065",
+      "title": "我们的匹配度有多高？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 1904,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t066",
+      "title": "暧昧期还要持续多久？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 59306,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t067",
+      "title": "该不该先表白？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 22032,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t068",
+      "title": "TA对这段关系的真实态度？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 28667,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t069",
+      "title": "如何让他主动联系我？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 2367,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t070",
+      "title": "两个人的默契度如何？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 27670,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t071",
+      "title": "这段感情值得投入吗？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 46690,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t072",
+      "title": "感情中的安全感从哪里来？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 65602,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t073",
+      "title": "他会为我改变吗？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 59005,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t074",
+      "title": "如何让感情更加甜蜜？",
+      "category": "爱情",
+      "colorTag": "粉色",
+      "hotness": 69544,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t075",
+      "title": "这次跳槽是正确选择吗？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 68185,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t076",
+      "title": "事业转折点什么时候来？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 66081,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t077",
+      "title": "考研能上岸吗？",
+      "category": "学业",
+      "colorTag": "蓝色",
+      "hotness": 32088,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t078",
+      "title": "这个项目能成功吗？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 34637,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t079",
+      "title": "晋升机会大不大？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 26875,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t080",
+      "title": "如何突破职业瓶颈？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 43899,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t081",
+      "title": "这次考试需要注意什么？",
+      "category": "学业",
+      "colorTag": "蓝色",
+      "hotness": 40597,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t082",
+      "title": "适合创业还是打工？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 70934,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t083",
+      "title": "副业方向在哪里？",
+      "category": "财运",
+      "colorTag": "蓝色",
+      "hotness": 38531,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t084",
+      "title": "学习新技能的最佳方向？",
+      "category": "学业",
+      "colorTag": "蓝色",
+      "hotness": 21475,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t085",
+      "title": "这份工作还能做多久？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 3692,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t086",
+      "title": "面试官对我的印象如何？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 78503,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t087",
+      "title": "转行成功的概率多大？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 79513,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t088",
+      "title": "近期有没有加薪的机会？",
+      "category": "财运",
+      "colorTag": "蓝色",
+      "hotness": 33934,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t089",
+      "title": "如何平衡工作和生活？",
+      "category": "通用",
+      "colorTag": "蓝色",
+      "hotness": 42411,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t090",
+      "title": "要不要继续深造？",
+      "category": "学业",
+      "colorTag": "蓝色",
+      "hotness": 13754,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t091",
+      "title": "目前的职业规划对吗？",
+      "category": "事业",
+      "colorTag": "蓝色",
+      "hotness": 81603,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t092",
+      "title": "这个决策的利弊分析？",
+      "category": "通用",
+      "colorTag": "蓝色",
+      "hotness": 37637,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t093",
+      "title": "导师对我的真实评价？",
+      "category": "学业",
+      "colorTag": "蓝色",
+      "hotness": 63756,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t094",
+      "title": "团队合作中我该注意什么？",
+      "category": "人际关系",
+      "colorTag": "蓝色",
+      "hotness": 76598,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t095",
+      "title": "宇宙现在想对我说什么？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 27533,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t096",
+      "title": "前世今生和我有什么关联？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 45250,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t097",
+      "title": "高我想指引我走向哪里？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 50287,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t098",
+      "title": "灵魂在这一世的任务是什么？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 29880,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t099",
+      "title": "梦境传递了什么潜意识信息？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 59685,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t100",
+      "title": "我的守护灵想告诉我什么？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 31254,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t101",
+      "title": "当下的灵性功课是什么？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 71846,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t102",
+      "title": "直觉给我的指引准不准？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 86143,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t103",
+      "title": "冥想中出现的画面是什么意思？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 12817,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t104",
+      "title": "宇宙的安排和我的选择如何平衡？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 73006,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t105",
+      "title": "最近的能量场怎么样？",
+      "category": "运势预测",
+      "colorTag": "紫色",
+      "hotness": 45292,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t106",
+      "title": "灵魂伴侣出现了吗？",
+      "category": "爱情",
+      "colorTag": "紫色",
+      "hotness": 73888,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t107",
+      "title": "脉轮能量需要如何调整？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 11747,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t108",
+      "title": "什么是我被赋予的天赋？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 44431,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t109",
+      "title": "星际种子的使命是什么？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 48097,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t110",
+      "title": "平行时空的我在经历什么？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 70024,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t111",
+      "title": "塔罗牌想要传递什么信息？",
+      "category": "运势预测",
+      "colorTag": "紫色",
+      "hotness": 65951,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t112",
+      "title": "缘分的背后有什么因果？",
+      "category": "人际关系",
+      "colorTag": "紫色",
+      "hotness": 37473,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t113",
+      "title": "月相变化对我的影响？",
+      "category": "运势预测",
+      "colorTag": "紫色",
+      "hotness": 14801,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t114",
+      "title": "如何连接内在的智慧？",
+      "category": "通用",
+      "colorTag": "紫色",
+      "hotness": 16770,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t115",
+      "title": "命运之轮现在转向何方？",
+      "category": "运势预测",
+      "colorTag": "紫色",
+      "hotness": 50557,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t116",
+      "title": "宇宙的丰盛如何流入我的生活？",
+      "category": "财运",
+      "colorTag": "紫色",
+      "hotness": 33711,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t117",
+      "title": "如何才能与自己和解？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 32439,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t118",
+      "title": "年末财运走势如何？",
+      "category": "财运",
+      "colorTag": "绿色",
+      "hotness": 4348,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t119",
+      "title": "身心状态需要关注什么？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 52513,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t120",
+      "title": "如何治愈过去的伤痛？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 15613,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t121",
+      "title": "财富管道有哪些可能性？",
+      "category": "财运",
+      "colorTag": "绿色",
+      "hotness": 2618,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t122",
+      "title": "应该如何爱自己？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 6322,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t123",
+      "title": "财务安全感的来源在哪里？",
+      "category": "财运",
+      "colorTag": "绿色",
+      "hotness": 46178,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t124",
+      "title": "焦虑的根源是什么？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 71189,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t125",
+      "title": "身体发出的信号意味着什么？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 13165,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t126",
+      "title": "如何建立健康的边界？",
+      "category": "人际关系",
+      "colorTag": "绿色",
+      "hotness": 23906,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t127",
+      "title": "理财的新思路是什么？",
+      "category": "财运",
+      "colorTag": "绿色",
+      "hotness": 54828,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t128",
+      "title": "最近适合做哪些投资？",
+      "category": "财运",
+      "colorTag": "绿色",
+      "hotness": 55271,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t129",
+      "title": "内心的平静被什么打破了？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 45610,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t130",
+      "title": "如何释放积压的情绪？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 28925,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t131",
+      "title": "大自然想通过什么方式疗愈我？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 58195,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t132",
+      "title": "财务方面的阻碍是什么？",
+      "category": "财运",
+      "colorTag": "绿色",
+      "hotness": 39049,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t133",
+      "title": "自我价值感如何提升？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 86395,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t134",
+      "title": "休息和忙碌如何平衡？",
+      "category": "通用",
+      "colorTag": "绿色",
+      "hotness": 28110,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t135",
+      "title": "这次考试需要注意什么？",
+      "category": "学业",
+      "colorTag": "黄色",
+      "hotness": 46582,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t136",
+      "title": "朋友对我的真实看法？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 58968,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t137",
+      "title": "沟通中最大的问题是什么？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 28773,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t138",
+      "title": "团队合作能顺利吗？",
+      "category": "事业",
+      "colorTag": "黄色",
+      "hotness": 49430,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t139",
+      "title": "社交运势怎么样？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 4439,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t140",
+      "title": "短期内最重要的事是什么？",
+      "category": "通用",
+      "colorTag": "黄色",
+      "hotness": 73336,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t141",
+      "title": "这个人值得深交吗？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 11457,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t142",
+      "title": "如何在群体中被看见？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 53161,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t143",
+      "title": "这次谈判的结果如何？",
+      "category": "事业",
+      "colorTag": "黄色",
+      "hotness": 34214,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t144",
+      "title": "适合拓展哪些社交圈？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 22585,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t145",
+      "title": "合作运如何？",
+      "category": "事业",
+      "colorTag": "黄色",
+      "hotness": 36823,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t146",
+      "title": "需要加强哪方面的能力？",
+      "category": "学业",
+      "colorTag": "黄色",
+      "hotness": 38222,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t147",
+      "title": "近期的旅行运势？",
+      "category": "通用",
+      "colorTag": "黄色",
+      "hotness": 24495,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t148",
+      "title": "如何提升表达能力？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 24967,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t149",
+      "title": "这段时间适合社交还是独处？",
+      "category": "通用",
+      "colorTag": "黄色",
+      "hotness": 3755,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t150",
+      "title": "贵人可能在什么地方出现？",
+      "category": "人际关系",
+      "colorTag": "黄色",
+      "hotness": 76185,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t151",
+      "title": "小组作业中我该注意什么？",
+      "category": "学业",
+      "colorTag": "黄色",
+      "hotness": 73080,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t152",
+      "title": "如何让更多人认可我？",
+      "category": "事业",
+      "colorTag": "黄色",
+      "hotness": 7193,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t153",
+      "title": "顺其自然是最好的选择吗？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 55086,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t154",
+      "title": "等待的意义是什么？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 26591,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t155",
+      "title": "这段时间适合静观其变吗？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 73317,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t156",
+      "title": "如何平复内心的波澜？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 20079,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t157",
+      "title": "过渡期该做些什么准备？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 67996,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t158",
+      "title": "放下之后会发生什么？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 69428,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t159",
+      "title": "情绪的低潮要持续多久？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 8945,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t160",
+      "title": "哪些事该放手了？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 8055,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t161",
+      "title": "沉默期的能量流动是怎样的？",
+      "category": "运势预测",
+      "colorTag": "青色",
+      "hotness": 51420,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t162",
+      "title": "转机在哪个方向上？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 20592,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t163",
+      "title": "该如何适应新的环境？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 6195,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t164",
+      "title": "停顿是为了更好的出发吗？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 50378,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t165",
+      "title": "这段空窗期如何充实自己？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 68536,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t166",
+      "title": "生活中的节奏该快还是慢？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 68014,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t167",
+      "title": "如何接受不可改变的事？",
+      "category": "通用",
+      "colorTag": "青色",
+      "hotness": 84718,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t168",
+      "title": "我该做出这个决断吗？",
+      "category": "通用",
+      "colorTag": "红色",
+      "hotness": 50117,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t169",
+      "title": "分手后还能复合吗？",
+      "category": "复合/前任",
+      "colorTag": "红色",
+      "hotness": 30687,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t170",
+      "title": "正在发生的冲突如何化解？",
+      "category": "人际关系",
+      "colorTag": "红色",
+      "hotness": 78420,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t171",
+      "title": "要不要和他大吵一架？",
+      "category": "爱情",
+      "colorTag": "红色",
+      "hotness": 10391,
+      "upMaster": "神奇的C总",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t172",
+      "title": "前任会回来找我吗？",
+      "category": "复合/前任",
+      "colorTag": "红色",
+      "hotness": 48323,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t173",
+      "title": "感情的激情还能复燃吗？",
+      "category": "爱情",
+      "colorTag": "红色",
+      "hotness": 57057,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t174",
+      "title": "该不该勇敢地做出改变？",
+      "category": "通用",
+      "colorTag": "红色",
+      "hotness": 6881,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t175",
+      "title": "这个竞争我能赢吗？",
+      "category": "事业",
+      "colorTag": "红色",
+      "hotness": 61182,
+      "upMaster": "丝瓜舅舅",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t176",
+      "title": "对方凭什么这样对我？",
+      "category": "人际关系",
+      "colorTag": "红色",
+      "hotness": 64207,
+      "upMaster": "月亮上的白房子",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t177",
+      "title": "强烈的情绪该如何释放？",
+      "category": "通用",
+      "colorTag": "红色",
+      "hotness": 12065,
+      "upMaster": "塔罗师小野",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t178",
+      "title": "该断则断的时刻到了吗？",
+      "category": "复合/前任",
+      "colorTag": "红色",
+      "hotness": 67251,
+      "upMaster": "酒友Tarot",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t179",
+      "title": "突发事件的方向是什么？",
+      "category": "通用",
+      "colorTag": "红色",
+      "hotness": 73832,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t180",
+      "title": "我们的矛盾还能修复吗？",
+      "category": "爱情",
+      "colorTag": "红色",
+      "hotness": 20624,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t181",
+      "title": "必须面对的冲突是什么？",
+      "category": "人际关系",
+      "colorTag": "红色",
+      "hotness": 4184,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t182",
+      "title": "决断之后会后悔吗？",
+      "category": "通用",
+      "colorTag": "红色",
+      "hotness": 19394,
+      "upMaster": "龙女塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t183",
+      "title": "这段感情还有没有反转？",
+      "category": "爱情",
+      "colorTag": "红色",
+      "hotness": 33456,
+      "upMaster": "Venus塔罗",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t184",
+      "title": "爆发还是隐忍？",
+      "category": "通用",
+      "colorTag": "红色",
+      "hotness": 64977,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t185",
+      "title": "最激烈的情感走向如何？",
+      "category": "爱情",
+      "colorTag": "红色",
+      "hotness": 62629,
+      "upMaster": "神秘学研究所",
+      "isNeutral": false,
+      "source": "builtin"
+    },
+    {
+      "id": "t186",
+      "title": "今日运势如何？",
+      "category": "运势预测",
+      "colorTag": "中性",
+      "hotness": 23582,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t187",
+      "title": "近期有什么值得关注的事？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 72741,
+      "upMaster": "龙女塔罗",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t188",
+      "title": "当下的能量状态是什么？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 78492,
+      "upMaster": "阿卡西记录者",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t189",
+      "title": "有什么信息需要我知道？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 51869,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t190",
+      "title": "十一月的能量指引是什么？",
+      "category": "运势预测",
+      "colorTag": "中性",
+      "hotness": 18782,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t191",
+      "title": "这周的关键词是什么？",
+      "category": "运势预测",
+      "colorTag": "中性",
+      "hotness": 21249,
+      "upMaster": "小瓜-顶呱呱的瓜",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t192",
+      "title": "天使数字的提示是什么？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 21589,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t193",
+      "title": "新月许愿的方向？",
+      "category": "运势预测",
+      "colorTag": "中性",
+      "hotness": 54063,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t194",
+      "title": "满月释放的议题是什么？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 27965,
+      "upMaster": "龙女塔罗",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t195",
+      "title": "水逆期间需要注意什么？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 54711,
+      "upMaster": "灵性占卜师Eva",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t196",
+      "title": "金星换座对我有什么影响？",
+      "category": "爱情",
+      "colorTag": "中性",
+      "hotness": 31464,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t197",
+      "title": "今日幸运色是什么？",
+      "category": "运势预测",
+      "colorTag": "中性",
+      "hotness": 23769,
+      "upMaster": "Venus塔罗",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t198",
+      "title": "适合开始新计划吗？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 28216,
+      "upMaster": "Sophie天使疗愈",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t199",
+      "title": "今天适合社交吗？",
+      "category": "人际关系",
+      "colorTag": "中性",
+      "hotness": 41820,
+      "upMaster": "龙女塔罗",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t200",
+      "title": "最近的课题是什么？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 56620,
+      "upMaster": "李奶奶塔罗",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t201",
+      "title": "有什么需要放下的？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 60573,
+      "upMaster": "塔罗师小野",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t202",
+      "title": "能量的流动方向是什么？",
+      "category": "运势预测",
+      "colorTag": "中性",
+      "hotness": 84258,
+      "upMaster": "Tarot塔罗喵",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t203",
+      "title": "现在是什么能量的转折点？",
+      "category": "运势预测",
+      "colorTag": "中性",
+      "hotness": 78731,
+      "upMaster": "酒友Tarot",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t204",
+      "title": "守护天使的讯息是什么？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 61731,
+      "upMaster": "星尘塔罗馆",
+      "isNeutral": true,
+      "source": "builtin"
+    },
+    {
+      "id": "t205",
+      "title": "此刻什么最重要？",
+      "category": "通用",
+      "colorTag": "中性",
+      "hotness": 64156,
+      "upMaster": "Venus塔罗",
+      "isNeutral": true,
+      "source": "builtin"
+    }
+  ]
+}
