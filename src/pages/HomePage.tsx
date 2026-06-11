@@ -3,9 +3,7 @@ import SearchInput from '../components/SearchInput';
 import ColorPicker from '../components/ColorPicker';
 import TopicCardList from '../components/TopicCardList';
 import ActionBar from '../components/ActionBar';
-import { useTopics } from '../hooks/useTopics';
 import { useBiliSearch } from '../hooks/useBiliSearch';
-import { useBiliResolve } from '../hooks/useBiliResolve';
 import { useFavorites } from '../hooks/useFavorites';
 import { COLOR_NEIGHBORS } from '../types';
 import type { ColorTag, Topic } from '../types';
@@ -15,25 +13,6 @@ interface HomePageProps {
   onColorChange: (color: Exclude<ColorTag, '中性'>) => void;
 }
 
-function shuffleArray<T>(arr: T[]): T[] {
-  const s = [...arr];
-  for (let i = s.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [s[i], s[j]] = [s[j], s[i]];
-  }
-  return s;
-}
-
-function dedupeByTitle(topics: Topic[]): Topic[] {
-  const seen = new Set<string>();
-  return topics.filter((t) => {
-    const key = t.title.replace(/[？?！!。，,、\s]/g, '').slice(0, 15);
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-}
-
 export default function HomePage({ currentColor, onColorChange }: HomePageProps) {
   const [keyword, setKeyword] = useState('');
   const [searchKeyword, setSearchKeyword] = useState('');
@@ -41,12 +20,8 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
   const [activeUpFilter, setActiveUpFilter] = useState('');
   const [sortByHeat, setSortByHeat] = useState(false);
 
-  // 本地库匹配
-  const { results: localResults } = useTopics(searchKeyword, currentColor, activeUpFilter);
-  // B站实时搜索
+  // 全部来自B站实时搜索 —— 每条链接都精确对应原视频
   const { biliTopics, biliLoading } = useBiliSearch(searchKeyword, activeUpFilter);
-  // 本地话题精确bvid解析
-  const resolvedUrls = useBiliResolve(localResults);
   const { isFavorite, toggleFavorite } = useFavorites();
 
   const hasActiveSearch = searchKeyword !== '' || activeUpFilter !== '';
@@ -56,54 +31,28 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
     setActiveUpFilter(upFilter);
   }, [keyword, upFilter]);
 
-  // 合并 B站 + 本地库，按颜色优先级分组
-  const mergedResults = useMemo(() => {
+  // B站实时结果按颜色优先级分组排列
+  const groupedResults = useMemo(() => {
     const neighbors = COLOR_NEIGHBORS[currentColor] || [];
+    const G1: Topic[] = [];
+    const G2: Topic[] = [];
+    const G3: Topic[] = [];
 
-    // 1. 合并 + 去重（B站数据优先）
-    const combined = dedupeByTitle([...biliTopics, ...localResults]);
-
-    // 2. 按颜色分组
-    const G1: Topic[] = []; // 精准颜色匹配
-    const G2: Topic[] = []; // 邻近色
-    const G3: Topic[] = []; // 中性
-
-    for (const t of combined) {
+    for (const t of biliTopics) {
       if (t.colorTag === currentColor) G1.push(t);
       else if (!t.isNeutral && neighbors.includes(t.colorTag as Exclude<ColorTag, '中性'>)) G2.push(t);
       else if (t.isNeutral || t.colorTag === '中性') G3.push(t);
     }
 
-    // 3. 组装：B站来源的排在每组前面
-    const sortBiliFirst = (arr: Topic[]) => {
-      const bili = arr.filter((t) => t.source === 'bilibili');
-      const other = shuffleArray(arr.filter((t) => t.source !== 'bilibili'));
-      return [...shuffleArray(bili), ...other];
-    };
-
-    const sg1 = sortBiliFirst(G1);
-    const sg2 = sortBiliFirst(G2);
-    const sg3 = sortBiliFirst(G3);
-
-    const assembled: Topic[] = [];
-    assembled.push(...sg1);           // 精准颜色匹配排最前
-    assembled.push(...sg2);           // 邻近色其次
-    assembled.push(...sg3);           // 中性最后
-
-    return assembled;                 // 展示全部匹配结果
-  }, [biliTopics, localResults, currentColor]);
+    return [...G1, ...G2, ...G3];
+  }, [biliTopics, currentColor]);
 
   const displayResults = useMemo(() => {
     if (sortByHeat) {
-      return [...mergedResults].sort((a, b) => b.hotness - a.hotness);
+      return [...groupedResults].sort((a, b) => b.hotness - a.hotness);
     }
-    return mergedResults;
-  }, [mergedResults, sortByHeat]);
-
-  const totalCount = useMemo(() => {
-    const all = dedupeByTitle([...biliTopics, ...localResults]);
-    return all.length;
-  }, [biliTopics, localResults]);
+    return groupedResults;
+  }, [groupedResults, sortByHeat]);
 
   return (
     <div className="max-w-lg mx-auto px-4 py-6 space-y-5">
@@ -116,7 +65,7 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
         </h1>
         <p className="text-sm text-[var(--text-muted)]">
           输入关键词，选择情绪能量，获取大众占卜灵感
-          <span className="block text-xs mt-0.5">📡 优先B站实时抓取 → 链接天然精确匹配</span>
+          <span className="block text-xs mt-0.5">📡 全部来自B站实时抓取，链接 = 原视频</span>
         </p>
       </div>
 
@@ -134,16 +83,12 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <p className="text-sm text-[var(--text-secondary)]">
-              共找到 <span className="text-[var(--accent)] font-medium">{totalCount}</span> 个匹配话题
-              {biliLoading && (
-                <span className="text-xs text-[var(--text-muted)] ml-2 animate-pulse">
-                  📡 实时搜集中…
-                </span>
-              )}
-              {biliTopics.length > 0 && !biliLoading && (
-                <span className="text-xs text-[var(--accent)] ml-2">
-                  📡 含{biliTopics.length}条实时话题
-                </span>
+              {biliLoading ? (
+                <span className="animate-pulse">📡 实时搜集中…</span>
+              ) : (
+                <>
+                  共找到 <span className="text-[var(--accent)] font-medium">{biliTopics.length}</span> 条B站实时话题
+                </>
               )}
             </p>
           </div>
@@ -151,7 +96,6 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
             topics={displayResults}
             isFavorite={isFavorite}
             onToggleFavorite={toggleFavorite}
-            resolvedUrls={resolvedUrls}
           />
           {displayResults.length > 0 && (
             <ActionBar
@@ -167,7 +111,7 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
         <div className="text-center py-12">
           <p className="text-5xl mb-4">🃏</p>
           <p className="text-[var(--text-secondary)]">输入关键词并选择颜色后，点击「生成话题」</p>
-          <p className="text-sm text-[var(--text-muted)] mt-2">默认选中紫色·神秘灵性，契合塔罗能量场</p>
+          <p className="text-sm text-[var(--text-muted)] mt-2">全量B站实时数据，每条链接精确直达原视频</p>
         </div>
       )}
     </div>
