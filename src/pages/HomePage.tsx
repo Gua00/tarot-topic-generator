@@ -5,6 +5,7 @@ import TopicCardList from '../components/TopicCardList';
 import ActionBar from '../components/ActionBar';
 import { useTopics } from '../hooks/useTopics';
 import { useBiliSearch } from '../hooks/useBiliSearch';
+import { useBiliResolve } from '../hooks/useBiliResolve';
 import { useFavorites } from '../hooks/useFavorites';
 import { COLOR_NEIGHBORS } from '../types';
 import type { ColorTag, Topic } from '../types';
@@ -44,6 +45,8 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
   const { results: localResults } = useTopics(searchKeyword, currentColor, activeUpFilter);
   // B站实时搜索
   const { biliTopics, biliLoading } = useBiliSearch(searchKeyword, activeUpFilter);
+  // 本地话题精确bvid解析
+  const resolvedUrls = useBiliResolve(localResults);
   const { isFavorite, toggleFavorite } = useFavorites();
 
   const hasActiveSearch = searchKeyword !== '' || activeUpFilter !== '';
@@ -148,6 +151,7 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
             topics={displayResults}
             isFavorite={isFavorite}
             onToggleFavorite={toggleFavorite}
+            resolvedUrls={resolvedUrls}
           />
           {displayResults.length > 0 && (
             <ActionBar
