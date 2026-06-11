@@ -133,9 +133,13 @@ export function useTopics(keyword: string, colorTag: Exclude<ColorTag, '中性'>
       }
     }
 
-    // Smart fallback: if G1+G2+G3 total < 5, expand to include all colors (same keyword)
+    // Smart fallback: if G1+G2+G3 total < 5, expand to include all colors (same keyword + UP主)
     if (G1.length + G2.length + G3.length < 5 && kw) {
-      const allMatched = allTopics.filter((t) => matchKeyword(t, kw));
+      const allMatched = allTopics.filter((t) => {
+        const kwMatch = matchKeyword(t, kw);
+        const upMatch = !upFilter || t.upMaster === upFilter;
+        return kwMatch && upMatch;
+      });
       for (const t of allMatched) {
         if (t.colorTag === colorTag && !G1.includes(t)) G1.push(t);
         else if (!t.isNeutral && !G2.includes(t) && !G1.includes(t)) G2.push(t);
@@ -152,7 +156,7 @@ export function useTopics(keyword: string, colorTag: Exclude<ColorTag, '中性'>
     result.push(...shuffledG1, ...shuffledG2, ...shuffledG3);
 
     return result; // 展示全部匹配结果
-  }, [keyword, colorTag]);
+  }, [keyword, colorTag, upFilter]);
 
   const sortedResults = useMemo(() => {
     if (sortByHeat) {

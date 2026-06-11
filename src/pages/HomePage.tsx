@@ -46,6 +46,8 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
   const { biliTopics, biliLoading } = useBiliSearch(searchKeyword, activeUpFilter);
   const { isFavorite, toggleFavorite } = useFavorites();
 
+  const hasActiveSearch = searchKeyword !== '' || activeUpFilter !== '';
+
   const handleGenerate = useCallback(() => {
     setSearchKeyword(keyword);
     setActiveUpFilter(upFilter);
@@ -125,7 +127,7 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
 
       <ColorPicker currentColor={currentColor} onColorChange={onColorChange} />
 
-      {searchKeyword && (
+      {hasActiveSearch && (
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <p className="text-sm text-[var(--text-secondary)]">
@@ -157,7 +159,7 @@ export default function HomePage({ currentColor, onColorChange }: HomePageProps)
         </div>
       )}
 
-      {!searchKeyword && (
+      {!hasActiveSearch && (
         <div className="text-center py-12">
           <p className="text-5xl mb-4">🃏</p>
           <p className="text-[var(--text-secondary)]">输入关键词并选择颜色后，点击「生成话题」</p>
