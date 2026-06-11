@@ -29,7 +29,7 @@ export interface Topic {
   hotness: number;
   upMaster: string;
   isNeutral: boolean;
-  source: 'builtin' | 'user';
+  source: 'builtin' | 'user' | 'bilibili';
 }
 
 export interface TopicsData {

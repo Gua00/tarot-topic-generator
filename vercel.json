@@ -1,5 +1,11 @@
 {
   "rewrites": [
-    { "source": "/((?!assets/).*)", "destination": "/index.html" }
-  ]
+    { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/search.ts": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  }
 }
