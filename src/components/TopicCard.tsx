@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react';
+import { Heart, ExternalLink } from 'lucide-react';
 import type { Topic } from '../types';
 
 interface TopicCardProps {
@@ -15,6 +15,17 @@ function formatHotness(n: number): string {
   return `${n}播放`;
 }
 
+function getBiliLink(topic: Topic): string {
+  // B站实时数据 → 直接跳转视频
+  if (topic.id.startsWith('b_')) {
+    const bvid = topic.id.replace('b_', '');
+    return `https://www.bilibili.com/video/${bvid}`;
+  }
+  // 本地话题 → B站搜索
+  const query = encodeURIComponent(`${topic.title} ${topic.upMaster}`);
+  return `https://search.bilibili.com/all?keyword=${query}`;
+}
+
 export default function TopicCard({
   topic,
   isFavorite,
@@ -22,6 +33,8 @@ export default function TopicCard({
   showDelete,
   onDelete,
 }: TopicCardProps) {
+  const isBili = topic.id.startsWith('b_');
+
   return (
     <div className="bg-[var(--card-bg)] border border-[var(--border-light)] rounded-[var(--radius-card)] p-4 card-glow group">
       <div className="flex items-start gap-3">
@@ -41,11 +54,26 @@ export default function TopicCard({
             <span className="text-xs text-[var(--text-muted)]">
               📊 {formatHotness(topic.hotness)}
             </span>
+            {isBili && (
+              <span className="text-xs px-1.5 py-0.5 rounded bg-pink-100 text-pink-600">
+                📡 B站实时
+              </span>
+            )}
           </div>
         </div>
 
         {/* Actions */}
         <div className="flex flex-col items-center gap-2">
+          {/* B站链接 */}
+          <a
+            href={getBiliLink(topic)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 rounded-full transition-all duration-200 hover:bg-[var(--accent-light)] text-[var(--text-muted)] hover:text-[var(--accent)]"
+            title={isBili ? '在B站打开原视频' : '在B站搜索相关视频'}
+          >
+            <ExternalLink size={16} />
+          </a>
           <button
             onClick={() => onToggleFavorite(topic)}
             className="p-1.5 rounded-full transition-all duration-200 hover:bg-[var(--accent-light)]"
